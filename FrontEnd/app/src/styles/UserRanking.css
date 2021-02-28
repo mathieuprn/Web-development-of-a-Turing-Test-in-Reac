@@ -1,0 +1,81 @@
+.userRanking {
+    margin: auto;
+    width: 70%;
+    margin-top: 10px;
+
+}
+
+.userRanking-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.userRanking-flex > span {
+    padding: 10px;
+
+    font-size: 26px;
+
+}
+
+.userRanking-hr {
+    border: 2px solid #394867;
+    border-radius: 2px;
+    width: 80%;
+    margin: auto;
+}
+
+.userRanking-score {
+    text-align: right;
+    width: 15%;
+}
+
+.userRanking-user {
+
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.userRanking-user-hr {
+    border: 2px solid #394867;
+    border-radius: 2px;
+
+    margin: 0 8px;
+}
+
+.userRanking-level {
+    width: 20%;
+
+}
+
+.text-bold {
+    font-weight: bold;
+
+}
+.userRanking-hr-special{
+    border-color: #ced4da;
+}
+
+@media all and (max-width: 1000px) {
+    .userRanking {
+        width: 90%;
+
+    }
+
+    .userRanking-flex > span {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 650px) {
+    .userRanking {
+        width: 96%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .userRanking-flex > span {
+        font-size: 16px;
+    }
+}

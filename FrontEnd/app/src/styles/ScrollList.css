@@ -1,0 +1,85 @@
+.scrollList-div {
+    height: 400px;
+    width: 600px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+@media all and (max-width: 500px) {
+    .scrollList-div {
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .scrollList-div {
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+
+.scrollList-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    transition: 2s;
+    position: absolute;
+    background-color: #394867;
+}
+.scrollList-div-text_image {
+    height: 300px;
+}
+
+.text-image-div {
+
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.text-image-div  div {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-image-div p {
+    padding: 5px;
+}
+
+.text-image-div > h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.text-image-div img {
+    max-width: 250px;
+    max-height: 250px;
+
+}
+
+
+@media all and (max-width: 700px) {
+    .text-image-div img {
+        display: none;
+    }
+
+    .text-image-div {
+        height: 200px;
+    }
+
+    .scrollList-div-text_image {
+        height: 200px;
+    }
+}

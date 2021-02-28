@@ -1,0 +1,44 @@
+.resultBar {
+    width: 500px;
+    height: 30px;
+    border-radius: 20px;
+    border: 4px solid #F1F6F9;
+    position: relative;
+    display: flex;
+}
+
+.resultBar-middle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    border-left: 4px solid #F1F6F9;
+
+}
+
+.resultBar-green {
+    z-index: -1;
+    background-color: #37b24d;
+    height: 100%;
+}
+
+.resultBar-red {
+    background-color: #e03131;
+    height: 100%;
+    z-index: -1;
+}
+
+@media all and (max-width: 600px) {
+    .resultBar {
+        max-width: 300px;
+        border: 3px solid #F1F6F9;
+    }
+
+    .resultBar-middle {
+        border-left: 3px solid #F1F6F9;
+    }
+
+    .resultBar h1 {
+        font-size: 20px;
+    }
+}

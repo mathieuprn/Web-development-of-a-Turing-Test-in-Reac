@@ -1,0 +1,65 @@
+.statScreen {
+    position: absolute;
+    top: 120px;
+
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.statScreen > div {
+    width: 100%;
+}
+
+.statScreen-spinner {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AIResult {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.AIResult-div {
+    margin: 10px 0;
+}
+
+.AIResult-div h3, h2 {
+    padding: 5px 0;
+}
+
+.AIResult-div h3 {
+    text-align: center;
+}
+
+.title-userResult {
+    text-align: center;
+}
+
+@media all and (max-width: 600px) {
+
+    .title-userResult {
+        font-size: 24px;
+    }
+
+    .AIResult-div h3, h2 {
+        font-size: 18px;
+    }
+}
+
+.stat-btn{
+display: flex;
+    justify-content: center;
+    margin:  20px auto;
+}

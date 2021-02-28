@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    background-color: #14274E;
+    font-family: 'Lato', serif;
+    color: #F1F6F9;
+
+}
+
+.title {
+    font-family: 'Lato', serif;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.text {
+    text-indent: 50px;
+    font-family: 'Lato', serif;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.content-handler-container {
+
+    border-radius: 20px;
+    padding: 40px;
+    background-color: #394867;
+    margin: 10px;
+
+}
+
+.content-handler-space-around-elements {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.content-handler-text {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.scrollList-div {
+    height: 400px;
+    width: 600px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+@media all and (max-width: 500px) {
+    .scrollList-div {
+        max-width: 400px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .scrollList-div {
+        max-width: 400px;
+    }
+}
+
+.scrollList-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    transition: 2s;
+    position: absolute;
+    background-color: #394867;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    margin: auto;
+    animation: spin 1.3s linear infinite;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border-top: 6px solid #394867;
+    border-left: 5px solid #14274E;
+    border-right: 5px solid #14274e;
+    border-bottom: 5px solid #14274e;;
+}
+

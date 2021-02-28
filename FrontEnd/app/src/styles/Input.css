@@ -1,0 +1,38 @@
+input:active {
+    outline: none;
+    border: none;
+}
+
+input:focus {
+    outline: 0;
+}
+
+input {
+
+    color: #F1F6F9;
+    background-color: #394867;
+    border: none;
+    width: 240px;
+    size: 16px;
+    height: 40px;
+    padding: 20px;
+
+}
+
+input::placeholder {
+    color: #F1F6F9;
+}
+
+.inputDiv {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 300px;
+    height: 60px;
+    background-color: #394867;
+}
+.vertical{
+    border-left: 2px solid #F1F6F9;
+}

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.aboutus-text {
+    width: 800px;
+}
+
+.aboutus-text > div {
+    padding: 5%;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 840px) {
+    .aboutus-text {
+        width: 600px;
+
+    }
+
+    .aboutus-text > div {
+
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .aboutus-text {
+        background-color: #394867;
+
+
+    }
+
+    .aboutus-text > div {
+        padding:10px 10px;
+        font-size: 11px;
+
+    }
+}
+
+
+.aboutus-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}

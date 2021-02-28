@@ -1,0 +1,87 @@
+.welcome-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+.welcome-div > h1 {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.welcome-div > p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+.scrollList-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.arrow {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    background-color: #394867;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    background-color: #2d3d5f;
+}
+
+.scrollList-welcome {
+    transition: 2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 30px;
+    width: 600px;
+    height: 400px;
+    background-color: #394867;
+
+}
+
+@media all and (max-width: 700px) {
+    .scrollList-welcome {
+        width: 90%;
+        height: 300px;
+
+    }
+
+    .welcome-div-screen h1 {
+        font-size: 18px;
+    }
+
+    .welcome-div-screen p {
+        font-size: 14px;
+    }
+}
+
+.scrollList-welcome-flex {
+    display: flex;
+    padding: 10px;
+}
+
+.welcome-div-screen {
+    display: flex;
+    flex-direction: column;
+    top: 80px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+
+}
+
+

@@ -1,0 +1,146 @@
+.img-result-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4%;
+
+
+}
+
+.img-result-container > div {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex: 1 1 20%;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+
+.img-result-sub-container > div {
+    margin: 10px;
+}
+
+.img-result-title {
+    font-size: 70px;
+
+}
+
+@media all and (max-width: 1000px) {
+    .img-result-title {
+        font-size: 60px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .img-result-title {
+        font-size: 40px;
+    }
+}
+@media all and (max-width: 500px) {
+    .img-result-title {
+        font-size: 35px;
+    }
+}
+
+
+@media all and (max-width: 500px) {
+    .width-screen-500 {
+        display: none;
+    }
+}
+
+.img-result-text {
+    text-align: justify;
+    font-size: 20px;
+    margin: 0 40px;
+    flex: 3;
+}
+
+@media all and (max-width: 1000px) {
+    .img-result-text {
+        font-size: 18px;
+        margin: 0 30px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .img-result-text {
+        font-size: 16px;
+        margin: 0 15px;
+
+    }
+}
+
+@media all and (max-width: 600px) {
+    .img-result-text {
+        font-size: 14px;
+        margin: 0 10px;
+
+    }
+}
+
+.result-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    margin: 0 15%;
+}
+
+@media all and (max-width: 1400px) {
+    .result-container {
+        margin: 0 5%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .result-container {
+        position: relative;
+    }
+}
+
+.result-score-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+
+.img-result-btn {
+    flex: 2;
+    max-width: 300px;
+}
+
+.img-thumb {
+    width: 180px;
+    height: 140px;
+}
+
+@media all and (max-width: 1200px) {
+    .img-thumb {
+        width: 160px;
+        height: 120px;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .img-thumb {
+        width: 140px;
+        height: 100px;
+    }
+}
+
+@media all and (max-width: 840px) {
+    .img-thumb {
+        width: 100px;
+        height: 80px;
+    }
+}
+@media all and (max-width: 500px) {
+    .img-result-btn {
+        margin:0 20px ;
+        max-width: 200px;
+    }
+}
