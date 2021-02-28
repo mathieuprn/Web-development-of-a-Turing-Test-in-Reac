@@ -1,0 +1,37 @@
+version: "3"
+
+services:
+  api:
+    build:
+      context: ./BackEnd
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./BackEnd/api:/api
+    environment:
+      - DB_HOST=db
+      - DB_NAME=app
+      - DB_USER=postgres
+      - DB_PASS=password
+      - API_KEY=${API_KEY}
+    depends_on:
+      - db
+  app:
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+      - REACT_APP_API_KEY=${API_KEY}
+    stdin_open: true
+    build:
+      context: ./FrontEnd
+    volumes:
+      - /app/node_modules
+      - ./FrontEnd/app:/app
+    ports:
+      - 3000:3000
+  db:
+    image: postgres:10-alpine
+    environment:
+      - POSTGRES_DB=app
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
